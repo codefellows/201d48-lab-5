@@ -36,10 +36,10 @@ function multiply(a, b) { //eslint-disable-line
   return [output, message];
 
 
-// }
+}
 
 // // Here is the test for multiply(); uncomment it to run it
-//  testMultiply(5,9);
+ testMultiply(5,9);
 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -90,15 +90,13 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-// var testArray = [2, 3, 4]; //eslint-disable-line
-// function sumArray(sumArr) { //eslint-disable-line
-//   var firstArr = sumArr[0];
-//   var secondArr = sumArr[1];
-//   var thirdArr = sumArr[3];
-//   var firstSum = sum (firstArr, secondArr)[0];
-//   var secondSum = sum (firstSum,thirdArr)[0];
-//   return (firstArr + ',' + secondArr + ',' + thirdArr + ' was passed in as array of numbers ' +  '.'  + ' and ' + secondSum + 'istheir sum' + '.')
+var testArray = [2, 3, 4]; //eslint-disable-line
 
+function sumArray(sumArr) { //eslint-disable-line
+  var sumPartOne = sum(sumArr[0], sumArr[1])[0];
+  var arraySum = sum(sumPartOne, sumArr[2])[0];
+  var message = sumArr + ' was passed in as an array of numbers, and ' + arraySum + ' is their sum.';
+  return [arraySum, message];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -118,9 +116,18 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+var testArray = [2, 3, 4];
 
+function multiplyArray(multArr) { //eslint-disable-line
+  var multPartOne = multiply(multArr[0], multArr[1])[0];
+  var arraySum = multiply(multPartOne, multArr[2])[0];
+  var message = 'The numbers ' + multArr + ' have a product of ' + arraySum + '.';
+  return [arraySum, message];
 }
+
+// Here is the test for multiplyArray(); uncomment it to run it
+
+testMultiplyArray(testArray);
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
