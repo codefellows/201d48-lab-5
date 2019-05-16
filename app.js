@@ -28,16 +28,18 @@ Write a function called multiply() that takes in two numbers as arguments and re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
+
 // // Write your code here
 function multiply(a, b) { //eslint-disable-line
   var output = a * b;
   var message = 'The product of ' + a + ' and ' + b + ' is ' + output  + '.';
   return [output, message];
 
-}
 
-// Here is the test for multiply(); uncomment it to run it
- testMultiply(5,9);
+// }
+
+// // Here is the test for multiply(); uncomment it to run it
+//  testMultiply(5,9);
 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -69,8 +71,10 @@ Test this function by hand in the console to get it working, and when you think 
 //   var firstRun =  a + ' and ' + b + ' and ' + c + ' sum to ' + secondSum + '.';
 //   var secondRun =  'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + secondMult + '.';
 //   return [secondSum, secondMult, firstRun, secondRun];
-}
-// // Here is the test for sumAndMultiply(); uncomment it to run it
+
+// }
+// // // Here is the test for sumAndMultiply(); uncomment it to run it
+
 // testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
